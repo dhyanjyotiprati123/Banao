@@ -1,0 +1,43 @@
+.midbar{
+    padding: 4rem 0;
+
+    @include Responsive(phone){
+        display: none
+    }
+   
+
+    &-wrapper{
+        @include Flex-Btn;
+        box-shadow: 2px 2px 3px rgba(0,0,0, .2);
+        padding: 1rem;
+    }
+    &-list{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    &-item{
+        text-transform: capitalize;
+        font-size: 1.2rem;
+    }
+    &-control{
+        @include Flex-Btn;
+        gap: 2rem;
+    }
+    &-box{
+        padding: 1rem;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        background: $bg-clr;
+    }
+}
+
+.item-active{
+    font-weight: 600;
+}

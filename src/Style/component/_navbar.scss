@@ -1,0 +1,60 @@
+.navbar{
+    padding: 3rem 0;
+
+    &-wrapper{
+        width: 90%;
+        margin: 0 auto;
+        @include Flex-Btn;
+    }
+    &-logo{
+        font-size: 3.5rem;
+        font-weight: 500;
+
+        @include Responsive(tablet){
+            font-size: 3rem;
+        }
+    }
+    &-search{
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background: transparent;
+        padding: 1rem 3rem;
+        border-radius: 5rem;
+        background: $bg-clr;
+
+        @include Responsive(tablet){
+            display: none;
+        }
+
+    }
+    &-input{
+        border: none;
+        width: 100%;
+        padding: .5rem;
+        background: transparent;
+        &:focus{
+            outline: none;
+        }
+    }
+    &-link{
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: capitalize;
+
+        @include Responsive(tablet){
+            display: none;
+        }
+    }
+    &-span{
+        color: blue;
+    }
+    &-join{
+        display: none;
+
+        @include Responsive(tablet){
+            display: block;
+        }
+    }
+}

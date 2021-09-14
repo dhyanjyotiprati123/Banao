@@ -1,0 +1,56 @@
+// heading and para
+
+.main-heading{
+    font-weight: 700;font-size: 3.6rem;
+    text-transform: capitalize;
+
+    @include Responsive(phone){
+        font-size: 3rem;
+    }
+}
+
+.sub-heading{
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.heading-3{
+    font-size: 1.5rem;
+}
+
+.para{
+    font-size: 1.8rem;
+}
+.para-sm{
+    font-size: 1.2rem;
+}
+
+// buttons
+
+ .btn{
+     border: none;
+     background: none;
+     border-radius: 5px;
+     @include Flex;
+     padding: 1rem 1.5rem;
+     text-transform: uppercase;
+     font-size: 1.5rem;
+     font-weight: 700;
+ }
+
+ .btn-border{
+     border: 1px solid $bg-clr;
+ }
+
+// helper classes
+
+.bg-blue{
+    background: $clr-blue;
+    color: white;
+}
+
+.userImg{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}

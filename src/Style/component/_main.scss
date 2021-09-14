@@ -1,0 +1,33 @@
+
+.main{
+    padding: 3rem 0;
+
+    &-wrapper{
+        display: flex;
+    }
+    &-posts{
+        flex: 9;
+        @include Flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    &-rightbar{
+        flex: 3;
+        position: sticky;
+
+        @include Responsive(phone){
+            display: none;
+        }
+    }
+
+    &-box{
+        padding: 2rem 1rem;
+      @include Flex-Btn;
+      font-size: 2rem;
+    }
+
+    &-location{
+        font-weight: 700;
+        font-size: 1.6rem;
+    }
+}

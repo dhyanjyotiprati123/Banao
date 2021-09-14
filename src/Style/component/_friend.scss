@@ -1,0 +1,28 @@
+
+.friend{
+    padding: 2rem;
+
+    &-recomend{
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        display: flex;
+        gap: 1rem;
+    }
+
+    &-online{
+        @include Flex-Btn;
+        padding: 2rem 0;
+    }
+    &-box{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    &-follow{
+        padding: .5rem 1rem;
+        @include Flex;
+        border-radius: 5rem;
+        background: $bg-clr;
+    }
+}
